@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+nav{
+	height: 60px;
+	background-color: rgb(228,170,1);	
+}
+
+	nav img{
+		height: 55px;
+		display: block; /*  se muestra como bloque */
+		margin: auto; /* lo centra */
+	}
+
+	nav ul{
+		display: none; /* oculta la botonera */
+		width: 40%;
+		float: right;
+		padding-top: 20px;
+	}
+
+	nav ul li{
+		float: left;
+		width: 33%;
+		text-align: center;
+		list-style: none; /* sacamos las viñetas de la lista */
+	}
+
+	nav ul li a{
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-decoration: none; /* sacamos el subrayado de los links */
+	}
+
+
+header img{
+	width: 100%;
+}
+
+
+.blanco img{
+	display: none;
+}
+
+h1{
+	color: black;
+	font-size: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Oswald', sans-serif;
+}
+
+p{
+	color: grey;
+	font-size: 18px;
+	line-height: 26px; /* interlineado */
+	text-align: justify;
+}
+
+
+section{
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 30px;
+}
+
+.verde{
+	background-color: rgb(0,189,135);
+}
+
+	.verde h2{
+		color: white;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		text-align: center;
+		font-size: 40px;
+		font-family: 'Oswald', sans-serif;
+
+	}
+
+	.verde figure{
+		margin: auto;
+		width: 90%;
+/*		border: red 1px solid;*/
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+		.verde figure img{
+			display: block;
+			margin: auto;
+		}
+
+	.amarillo{
+		background-color: rgb(250, 198,0);
+		padding-top: 30px;
+	}
+
+	.amarillo img{
+		display: block;
+		margin: auto;
+	}
+
+	.amarillo h3{
+		color: rgb(0,189,135);
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.amarillo p{
+		color: white;
+		padding-top: 30px;
+	}
+
+/* desde 800px hasta el infinito */
+@media screen and (min-width: 900px) {
+	
+	.verde{
+		height: 460px;
+	}
+
+	.verde figure{
+		width: 33%;
+		float: left;
+	}
+
+	nav ul{
+		display: block;
+	}
+
+	nav img{
+		display: inline-block;
+		float: left;
+		padding-left: 5%;
+		padding-right: 5%; 
+	}
+
+	.blanco img{
+		float: left;
+		display: inline-block;
+	}
+
+	.blanco article{
+		width: 50%;
+		float: right;
+	}
+
+	.blanco{
+		height: 400px;
+	}
+
+}
+
+
+
+
+
+
+
